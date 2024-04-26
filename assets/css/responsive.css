@@ -1,0 +1,124 @@
+/* bagian responsive */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /* tambahkan ini untuk menghindari masalah dengan ukuran elemen */
+}
+
+html {
+	background-color: #eaf0f2;
+}
+
+body {
+	font: 16px/1.6 "Open Sans", sans-serif; /* Perbaikan: gunakan unit line-height yang fleksibel */
+}
+
+header {
+	text-align: center;
+	padding-top: 10%; /* Perbaikan: Gunakan unit persen untuk padding agar responsif */
+	margin-bottom: 10%; /* Perbaikan: Gunakan unit persen untuk margin agar responsif */
+}
+
+header h1 {
+	font: normal 4vw/1.5 "Open Sans", sans-serif; /* Perbaikan: Gunakan unit fleksibel untuk font */
+	color: #3f71ae;
+	padding-bottom: 1rem; /* Perbaikan: Gunakan unit fleksibel untuk padding */
+}
+
+header h2 {
+	color: #f05283;
+}
+
+header span {
+	color: #3f71ea;
+}
+
+/* footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%; /* Perbaikan: pastikan footer mengisi seluruh lebar */
+}
+
+@media (max-height: 800px) {
+	footer {
+		position: static;
+	}
+	header {
+		padding-top: 5%; /* Perbaikan: sesuaikan ulang padding */
+	}
+}
+
+.footer-distributed {
+	background-color: #2c292f;
+	width: 100%;
+	text-align: left;
+	font: bold 1vw sans-serif; /* Perbaikan: gunakan unit fleksibel untuk font */
+	padding: 1% 5%; /* Perbaikan: Gunakan unit fleksibel untuk padding */
+	margin-top: 5%; /* Perbaikan: Gunakan unit fleksibel untuk margin */
+}
+
+.footer-distributed .footer-left {
+	width: 20%;
+}
+
+.footer-distributed h3 {
+	color: #ffffff;
+	font: normal 2vw "Cookie", cursive; /* Perbaikan: gunakan unit fleksibel untuk font */
+	margin: 0;
+}
+
+.footer-distributed .footer-left img {
+	width: 50%; /* Perbaikan: Sesuaikan ukuran gambar */
+}
+
+.footer-distributed h3 span {
+	color: #e0ac1c;
+}
+
+.footer-distributed .footer-links {
+	color: #ffffff;
+	margin: 1% 0; /* Perbaikan: Gunakan unit fleksibel untuk margin */
+}
+
+.footer-distributed .footer-links a {
+	line-height: 1.8; /* Perbaikan: Gunakan unit fleksibel untuk line-height */
+}
+
+.footer-distributed .footer-company-name {
+	color: #8f9296;
+	font-size: 1vw; /* Perbaikan: gunakan unit fleksibel untuk font */
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-center {
+	width: 45%;
+}
+
+.footer-distributed .footer-center i {
+	font-size: 2vw; /* Perbaikan: gunakan unit fleksibel untuk font */
+	width: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+	height: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+	line-height: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+}
+
+.footer-distributed .footer-right {
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+	font-size: 1vw; /* Perbaikan: gunakan unit fleksibel untuk font */
+}
+
+.footer-distributed .footer-company-about span {
+	font-size: 1.2vw; /* Perbaikan: gunakan unit fleksibel untuk font */
+}
+
+.footer-distributed .footer-icons a {
+	width: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+	height: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+	line-height: 5%; /* Perbaikan: Sesuaikan ukuran ikon */
+	font-size: 2vw; /* Perbaikan: gunakan unit fleksibel untuk font */
+}

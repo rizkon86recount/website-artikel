@@ -1,0 +1,74 @@
+/* bagian navbar */
+
+.navbar {
+	background: #103239;
+	margin: 0;
+	padding: 20px 30px;
+	z-index: 1000;
+}
+
+.logo {
+	width: 50px;
+	height: 30px;
+	color: #81de16;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tombol {
+	display: none;
+	color: white;
+	font-size: 14pt;
+}
+
+.tombol:hover {
+	cursor: pointer;
+}
+
+.menu {
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+	padding-left: 0;
+	margin-right: 10px;
+}
+
+.menu li a {
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+
+	.menu.aktif {
+		display: inline-block;
+		position: absolute;
+		top: 64px;
+		background: #212121;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+
+	.menu.aktif li a {
+		padding: 10px;
+		display: inline-block !important;
+	}
+
+	.tombol {
+		display: block;
+	}
+}
